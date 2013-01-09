@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       respond_to do |format|
         format.html
         format.json { render json: @user_intrests }
-     
+     end
     end
 
   def create
