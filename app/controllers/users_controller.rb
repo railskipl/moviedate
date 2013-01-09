@@ -10,10 +10,15 @@ class UsersController < ApplicationController
     @user = User.new
     @title="Sign up"
   end
-    def dashboard
+     def dashboard
       @users = User.all
       @user_intrests = UsersIntrest.all
-   end
+      
+      respond_to do |format|
+        format.html
+        format.json { render json: @user_intrests }
+     
+    end
 
   def create
    @user = User.new(params[:user])
