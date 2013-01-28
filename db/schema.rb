@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130107103137) do
+ActiveRecord::Schema.define(:version => 20130128100455) do
+
+  create_table "interested_users", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "user_name"
+    t.date     "birthday"
+    t.string   "gender"
+    t.string   "location"
+    t.string   "contact_no"
+    t.integer  "movie_id"
+    t.string   "movie_name"
+    t.string   "theater"
+    t.string   "city"
+    t.datetime "time"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "roles_users", :id => false, :force => true do |t|
     t.integer "role_id"
