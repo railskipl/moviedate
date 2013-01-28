@@ -1,0 +1,36 @@
+<div align="center" id="middle">
+    <div class="newuser_box">
+<h1>Intrested Users</h1>
+
+<table border="1">
+  <tr>
+    <th>Movie Name</th>
+    <th>User name</th>
+    <th>Gender</th>
+    <th>Birthday</th>
+    <th>Location</th>
+    <th>Theater</th>
+    <th>City</th>
+    <th>Time</th>
+    
+  </tr>
+
+<% @user_intrests.each do |user|%>
+  <tr>
+    <td> <%= user.movie_name %> </td>
+    <td> <%= user.user_name %></td>
+    <td> <%= user.gender %></td>
+    <td> <%= user.location %></td>
+    <td> <%= user.theater%></td>
+    <td> <%= user.city %></td>
+    <td> <%= user.time %></td>
+  </tr>
+<% end %>
+
+
+</table>
+
+<br />
+
+</div>
+</div>
