@@ -4,10 +4,10 @@ class InterestedUsersController < ApplicationController
   
 	def index
       @interested_users = InterestedUser.all
-      
+      @interested_users1 = Hash["interested_users" => @interested_users]
       respond_to do |format|
         format.html
-        format.json { render json: (Hash.new["intereseted_users"] = @interested_users) }
+        format.json { render json: (@interested_users1) }
     end
         
   end
