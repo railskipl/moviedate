@@ -7,7 +7,7 @@ class InterestedUsersController < ApplicationController
       
       respond_to do |format|
         format.html
-        format.json { render json: (Hash.new["intereseted_users"] = @interested_users)} }
+        format.json { render json: (Hash.new["intereseted_users"] = @interested_users) }
     end
         
   end
