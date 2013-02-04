@@ -5,11 +5,11 @@ get "password_resets/new"
 match '/change_password', :controller => 'users', :action => 'change_password'
 
   resources :users 
- resources :users_interests 
+ resources :interested_users 
   resources :sessions, :only => [:new,:create,:destroy,:edit]
   root :to => 'sessions#new'
   match 'dashboard' => 'users#dashboard'
-  match '/users', :to =>'users#index',:as => 'user_root'
+  match '/interested_users', :to =>'interested_users#index',:as => 'user_root'
   match '/signup', :to =>'users#new'
   match '/signin', :to =>'sessions#new'
   match  '/users/:id/edit',  :to => "users#edit" 
