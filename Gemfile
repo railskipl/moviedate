@@ -5,7 +5,11 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+<<<<<<< HEAD
 gem 'sqlite3'
+=======
+#gem 'sqlite3'
+>>>>>>> d6bcdb8a7364f940efe219fc8018197dfcca2663
 #gem 'mysql2'
 gem 'execjs'
 gem 'therubyracer'
